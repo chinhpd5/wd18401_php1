@@ -44,11 +44,49 @@
     foreach($arr2 as $value){
         echo "value = $value <br>";
     }
-
-
-
-
     echo "<br>";
+    $array1 = [
+        "name" => "Phí Đức Chính",
+        "age" => 20,
+        "khoa" => "Công nghệ thông tin",
+        "gt" => true,
+        "result" => [6,7.5,8.5,9]
+    ];
+    $thongTin ='';
+
+    $thongTin .= "Họ và tên: ".$array1["name"]."<br>";
+    $thongTin .= "Tuổi: ".$array1["age"]."<br>";
+    $thongTin .= "Khoa: ".$array1["khoa"]."<br>";
+    $thongTin .= "Giới tính: ".( $array1['gt'] ? "Nam" : "Nữ" )."<br>";
+    $thongTin .= "Tổng điểm: ".( array_sum($array1["result"]) )."<br>";
+    
+    echo $thongTin;
+
+
+
+    #Function - Hàm
+
+    function sayHello($name){
+        echo "Xin chào $name<br>";
+    }
+
+    $myName = "chính";
+    sayHello($myName);
+
+    function tinhTong($a, $b){
+        return $a + $b;
+    }
+
+    $result = tinhTong(3,4);
+    echo $result;
+
+    // BTVN
+    /*
+        1. viết 1 hàm để kiểm tra 1 số có phải là số nguyên tố hay không?
+        2. sử dụng hàm đó để kết hợp với foreach tính tổng các phần tử
+        trong 1 array nếu là số nguyên tố
+    */
+
     echo "<br>";
     echo "<br>";
     echo "<br>";
