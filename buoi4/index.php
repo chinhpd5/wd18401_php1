@@ -79,7 +79,10 @@
 
     $result = tinhTong(3,4);
     echo $result;
-
+    $tinhTich = function ($a, $b) {
+        return $a * $b;
+    };
+    echo $tinhTich(4, 5);
     // BTVN
     /*
         1. viết 1 hàm để kiểm tra 1 số có phải là số nguyên tố hay không?
