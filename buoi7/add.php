@@ -1,5 +1,6 @@
 <?php
     include_once("connect.php");
+
     $hoVaTen = '';
     $khoa = '';
     $ngaySinh = '';
@@ -11,11 +12,7 @@
     $errLopId = '';
     $isCheck = true;
 
-    $sql ="SELECT * FROM lop";
-
-    $result = $conn->query($sql);
-    $option='';
-    
+   
 
 
 
@@ -58,6 +55,13 @@
 
    }
 
+
+   
+   $sql ="SELECT * FROM lop";
+
+   $result = $conn->query($sql);
+   $option='';
+   
    if($result){
     $listLop = $result->fetchAll(PDO::FETCH_ASSOC);
     if($listLop){

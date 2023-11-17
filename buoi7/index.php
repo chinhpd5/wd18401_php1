@@ -24,6 +24,7 @@
                         <td>'.$item["khoa"].'</td>
                         <td>'.$ntn.'</td>
                         <td>'.$item["tenLop"].'</td>
+                        <td><a href="edit.php?id='.$item["id"].'">Sửa</a></td>
                     </tr>';
             }
         }
