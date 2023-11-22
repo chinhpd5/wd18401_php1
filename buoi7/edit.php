@@ -49,8 +49,9 @@
         $khoa = trim($_POST["khoa"]);
         $lopId = $_POST["lopId"];
         $ngaySinh = $_POST["ngaySinh"];
-        echo "<pre>";
-        print_r([$id,$hoVaTen,$khoa,$ngaySinh,$lopId]);
+        // echo "<pre>";
+        // print_r([$id,$hoVaTen,$khoa,$ngaySinh,$lopId]);
+        // die();
         if(empty($hoVaTen)){
             $errHovaTen = "Nhập họ và tên";
             $isCheck= false;
@@ -65,7 +66,7 @@
         }
         if($isCheck){
             $sql = "UPDATE sinhvien
-                    SET hoVaTen = '$hoVaTen', khoa ='$khoa', ngaySinh ='$ngaySinh', lopId='$lopId'
+                    SET hoVaTen = '$hoVaTen', khoa ='$khoa', ngaySinh ='$ngaySinh', lopId=$lopId
                     WHERE id = $id";
 
             $result = $conn->query($sql);
