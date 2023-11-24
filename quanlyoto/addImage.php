@@ -51,7 +51,7 @@
 
 <form action="addImage.php" method="post"  enctype="multipart/form-data">
     <label for="">Hình ảnh</label>
-    <input type="file" name="hinhAnh" > 
+    <input type="color" name="hinhAnh" > 
     <span style="color:red"><?= $errImage ?></span>
     <br>
 
