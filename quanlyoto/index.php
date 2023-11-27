@@ -19,7 +19,7 @@
                         <td><input type="color" value="'.$item["mauSac"].'" disabled></td>
                         <td><img src="uploads/'.$item["hinhAnh"].'" alt="" style ="width:150px"></td>
                         <td>'.$item["tenHangXe"].'</td>
-                        <td></td>
+                        <td><a href="edit.php?id='.$item["id"].'">Sửa</a></td>
                     </tr>
                 ';
             }
